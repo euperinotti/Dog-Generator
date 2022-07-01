@@ -74,6 +74,11 @@ body, #main, #buttons, .container-image, .btn-download {
     cursor: pointer;
 }
 
+#buttons .btn-generate:active {
+    transform: translateY(4px);
+    transition: 200ms;
+}
+
 #buttons .btn-download {
     width: 300px;
     height: 60px;
