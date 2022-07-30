@@ -38,6 +38,7 @@ body, #main, #buttons, .container-image, .btn-download {
     color: #6f6f6f;
     width: 300px;
     text-align: center;
+    display: block;
 }
 
 #main label {
@@ -91,4 +92,8 @@ body, #main, #buttons, .container-image, .btn-download {
 
 .btn-download svg {
     margin: 0px 10px 0px 0px
+}
+
+img {
+    height: 100%;
 }
