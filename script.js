@@ -3,8 +3,10 @@ let image = document.querySelector('img');
 let download = document.querySelector('.btn-download');
 
 button.addEventListener('click', () => {
+    //using the unsplash api
     fetch('https://api.unsplash.com/photos/random?query=dog&client_id=3ElZfutFs2Xro49kzTn3uQiARTF1DTQLfJxPL5lH_mk')
-        .then(value => { 
+        .then(value => {
+            //converting the result to json
             return value.json();
         })
             .then(function(json) {

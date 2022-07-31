@@ -25,7 +25,7 @@ body, #main, #buttons, .container-image, .btn-download {
 
 #main {
     height: auto;
-    margin: 5% 5%;
+    margin: 50px 50px 25px 50px;
 }
 
 #main .container-image {
