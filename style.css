@@ -10,6 +10,7 @@
 body {
     background-color: #1f1f1f;
     font-family: 'Inter';
+    height: 100vh;
 }
 
 body, #main, #buttons, .container-image, .btn-download {
@@ -25,11 +26,12 @@ body, #main, #buttons, .container-image, .btn-download {
 
 #main {
     height: auto;
-    margin: 50px 50px 25px 50px;
 }
 
 #main .container-image {
     height: 550px;
+    width: 800px;
+    border: 4px dashed #6f6f6f;
 }
 
 .container-image span {

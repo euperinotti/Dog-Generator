@@ -10,6 +10,7 @@ button === null || button === void 0 ? void 0 : button.addEventListener('click',
         var dogo = json;
         console.log(dogo);
         document.querySelector('span').style.display = 'none';
+        document.querySelector('.container-image').style.border = 'none';
         image.src = dogo.urls.regular;
     })["catch"](function (error) {
         console.log(error);
