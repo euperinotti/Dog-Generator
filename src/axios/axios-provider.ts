@@ -9,7 +9,6 @@ const api = {
       const { data } = await axios.get(
         `${URL}/photos/random?query=dog&client_id=3ElZfutFs2Xro49kzTn3uQiARTF1DTQLfJxPL5lH_mk`
       )
-      console.log(data)
 
       const response: Image = {
         alt: data.alt_description,

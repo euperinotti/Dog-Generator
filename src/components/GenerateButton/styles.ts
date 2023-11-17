@@ -17,4 +17,10 @@ export const Button = styled.button`
   color: ${theme.colors.white};
   box-shadow: 0px 15px 37px #000;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  transition: ease-in-out 200ms;
 `

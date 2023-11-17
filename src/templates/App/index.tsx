@@ -19,6 +19,13 @@ export const AppTemplate = () => {
       <S.Main>
         <ImageArea imageInfo={imageInfo as Image} />
         <GenerateButton value="Generate" onClick={handleClick} />
+        {/* <DownloadButton
+          value={'Baixar'}
+          download="dog"
+          href={download}
+          onClick={handleDownload}
+          target="_blank"
+        /> */}
       </S.Main>
     </S.Container>
   )
