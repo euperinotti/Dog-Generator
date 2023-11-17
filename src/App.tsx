@@ -1,4 +1,4 @@
-import { AppTemplate } from "./templates"
+import { AppTemplate } from "@/templates/App"
 
 function App() {
   return (
