@@ -14,6 +14,7 @@ const api = {
       const response: Image = {
         alt: data.alt_description,
         url: data.urls.raw,
+        display: data.urls.regular,
         user: {
           name: data.user.first_name,
           instagram: data.instagram_username

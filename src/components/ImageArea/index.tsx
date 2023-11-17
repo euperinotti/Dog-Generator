@@ -10,7 +10,7 @@ export const ImageArea = ({ imageInfo }: ImageAreaProps) => {
     return (
       <>
         <S.Container>
-          <S.Image src={imageInfo.url} alt={imageInfo.alt} />
+          <S.Image src={imageInfo.display} alt={imageInfo.alt} />
         </S.Container>
         <S.Span>
           {imageInfo.alt} by{' '}

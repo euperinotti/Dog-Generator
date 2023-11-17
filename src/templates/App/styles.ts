@@ -3,12 +3,12 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   max-width: 900px;
-  height: 100%;
+  height: fit-content;
 `
 
 export const Main = styled.main`
   width: 100%;
-  height: 700px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
