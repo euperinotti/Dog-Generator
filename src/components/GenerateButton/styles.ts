@@ -3,11 +3,11 @@ import styled from 'styled-components'
 
 export const Button = styled.button`
   font-family: ${theme.fonts.family.default};
-  height: 60px;
+  height: 46px;
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
   border-radius: 30px;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: ${theme.fonts.weight.bold};
   background-image: linear-gradient(
     to right,

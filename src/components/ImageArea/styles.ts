@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 800px;
-  height: auto;
+  height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,6 @@ export const Container = styled.div`
 
 export const Dashed = styled(Container)`
   border: 4px dashed ${theme.colors.darkGrey};
-  height: 550px;
 `
 
 export const Paragraph = styled.p`
@@ -28,7 +27,7 @@ export const Paragraph = styled.p`
 export const Image = styled.img`
   object-fit: contain;
   max-width: 800px;
-  height: 550px;
+  max-height: 550px;
 `
 
 export const Span = styled.span`
