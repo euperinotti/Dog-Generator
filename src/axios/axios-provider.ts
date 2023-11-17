@@ -1,3 +1,4 @@
+import { Image } from '@/models/Image'
 import axios from 'axios'
 
 const URL = 'https://api.unsplash.com'
@@ -5,9 +6,19 @@ const URL = 'https://api.unsplash.com'
 const api = {
   async getDog() {
     try {
-      const response = await axios.get(
+      const { data } = await axios.get(
         `${URL}/photos/random?query=dog&client_id=3ElZfutFs2Xro49kzTn3uQiARTF1DTQLfJxPL5lH_mk`
       )
+      console.log(data)
+
+      const response: Image = {
+        alt: data.alt_description,
+        url: data.urls.raw,
+        user: {
+          name: data.user.first_name,
+          instagram: data.instagram_username
+        }
+      }
 
       return response
     } catch (error) {
