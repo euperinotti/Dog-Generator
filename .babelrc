@@ -1,4 +1,25 @@
 {
-  "presets": ["next/babel"],
-  "plugins": ["styled-components"]
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    "styled-components",
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "^@/(.+)": "./src/\\1"
+        }
+      }
+    ]
+  ]
 }
