@@ -1,7 +1,9 @@
 const theme = {
   colors: {
     black: '#1f1f1f',
-    white: '#F9F9F9'
+    white: '#F9F9F9',
+    red: '#d81313',
+    orange: '#eb6e14'
   },
   fonts: {
     family: {
