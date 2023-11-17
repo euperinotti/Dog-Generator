@@ -11,7 +11,7 @@
     "@babel/preset-typescript"
   ],
   "plugins": [
-    "styled-components",
+    "babel-plugin-styled-components",
     [
       "module-resolver",
       {
