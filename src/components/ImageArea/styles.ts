@@ -8,6 +8,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  object-fit: contain;
 `
 
 export const Dashed = styled(Container)`
@@ -24,14 +25,24 @@ export const Paragraph = styled.p`
 
 export const Image = styled.img`
   object-fit: contain;
+  max-width: 800px;
+  max-height: 550px;
 `
 
 export const Span = styled.span`
-  font-weight: ${theme.fonts.weight.bold};
   font-size: 26px;
   color: ${theme.colors.darkGrey};
   width: 80%;
   text-align: center;
+  font-weight: ${theme.fonts.weight.light};
+  font-style: italic;
 `
 
-export const Link = styled.a``
+export const Link = styled.a`
+  text-decoration: none;
+  color: ${theme.colors.darkGrey};
+
+  &:hover {
+    text-decoration: underline;
+  }
+`

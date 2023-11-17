@@ -6,17 +6,22 @@ interface ImageAreaProps {
 }
 
 export const ImageArea = ({ imageInfo }: ImageAreaProps) => {
-  if (imageInfo.url) {
+  if (imageInfo && imageInfo.url) {
     return (
-      <S.Container>
-        <S.Image src={imageInfo.url} />
+      <>
+        <S.Container>
+          <S.Image src={imageInfo.url} alt={imageInfo.alt} />
+        </S.Container>
         <S.Span>
           {imageInfo.alt} by{' '}
-          <S.Link href={'https://instagram.com/' + imageInfo.user.instagram}>
+          <S.Link
+            href={'https://instagram.com/' + imageInfo.user.instagram}
+            target="_blank"
+          >
             {imageInfo.user.name}
           </S.Link>
         </S.Span>
-      </S.Container>
+      </>
     )
   }
 
