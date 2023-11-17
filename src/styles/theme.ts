@@ -3,7 +3,8 @@ const theme = {
     black: '#1f1f1f',
     white: '#F9F9F9',
     red: '#d81313',
-    orange: '#eb6e14'
+    orange: '#eb6e14',
+    darkGrey: '#6f6f6f'
   },
   fonts: {
     family: {

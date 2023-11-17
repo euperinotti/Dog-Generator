@@ -8,8 +8,12 @@ export const Button = styled.button`
   max-width: 300px;
   border-radius: 30px;
   font-size: 30px;
-  font-weight: ${theme.fonts.weight.extraBold};
-  background-image: linear-gradient(to right, ${theme.colors.red}, ${theme.colors.orange});
+  font-weight: ${theme.fonts.weight.bold};
+  background-image: linear-gradient(
+    to right,
+    ${theme.colors.red},
+    ${theme.colors.orange}
+  );
   color: ${theme.colors.white};
   box-shadow: 0px 15px 37px #000;
   cursor: pointer;

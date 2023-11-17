@@ -16,12 +16,9 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
-    font-family: ${theme.fonts.family.default};
-  }
-
-  button {
+    height: 100%;
     font-family: ${theme.fonts.family.default};
   }
 
