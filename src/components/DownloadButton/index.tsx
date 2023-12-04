@@ -1,30 +1,27 @@
-import { MouseEventHandler } from 'react'
+import api from '@/axios/axios-provider'
 import * as S from './styles'
 
 interface DownloadButtonProps {
   value: string
-  onClick: MouseEventHandler
   href: string
   download: string
-  target: string
 }
 
-export const DownloadButton = ({
-  value,
-  onClick,
-  href,
-  download
-}: DownloadButtonProps) => {
+export const DownloadButton = ({ value, href }: DownloadButtonProps) => {
   return (
     <S.Button
-      download={download}
-      role="button"
+      download={'dog-image'}
       href={href}
-      onClick={onClick}
       target="_blank"
+      rel="noopener noreferrer"
+      onClick={async () => {
+        await api.downloadImage(href)
+      }}
     >
-      <object data="/icons/download.svg"></object>
-      {value}
+      <button>
+        <object data="/icons/download.svg"></object>
+        {value}
+      </button>
     </S.Button>
   )
 }
